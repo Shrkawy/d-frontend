@@ -21,7 +21,7 @@ const Navbar = () => {
         <Right>
           <button>REGISTER</button>
           <button>SIGN IN</button>
-          <Badge badgeContent={1} badgeColor="blue">
+          <Badge badgeContent={1} badgeColor="teal">
             <Cart size={20} />
           </Badge>
         </Right>
