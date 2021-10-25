@@ -63,7 +63,7 @@ const Slider = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.section`
   position: relative;
   width: 100%;
   height: calc(100vh - 3.75rem);

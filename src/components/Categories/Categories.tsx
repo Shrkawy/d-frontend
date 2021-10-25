@@ -24,7 +24,7 @@ const Categories = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.section`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.25rem;

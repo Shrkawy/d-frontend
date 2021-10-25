@@ -6,12 +6,11 @@ const Announcement = () => {
 
 const Container = styled.div`
   height: 1.875rem;
+  line-height: 1.875rem;
+  text-align: center;
+  font-weight: 300;
   background-color: teal;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 300;
 `;
 
 export default Announcement;

@@ -30,7 +30,7 @@ const Navbar = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.header`
   height: 3.75rem;
 `;
 

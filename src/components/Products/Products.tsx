@@ -46,7 +46,7 @@ const Products = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.section`
   padding: 3.5rem 2.5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

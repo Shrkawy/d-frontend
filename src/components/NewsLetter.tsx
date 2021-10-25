@@ -16,7 +16,7 @@ const NewsLetter = () => {
   );
 };
 
-const Container = styled.div`
+const Container = styled.section`
   height: 60vh;
   background-color: #fcf5f5;
   display: flex;
