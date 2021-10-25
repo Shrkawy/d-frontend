@@ -28,7 +28,7 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.25rem;
-  padding: 1.25rem;
+  padding: 3.5rem 2.5rem;
 `;
 
 export default Categories;

@@ -23,8 +23,7 @@ const slides: Slide[] = [
     title: "SUMMER SALE 2",
     description:
       "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    imgSrc:
-      "https://images.unsplash.com/photo-1589465885857-44edb59bbff2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjB3aGl0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
+    imgSrc: "https://i.ibb.co/DG69bQ4/2.png",
   },
   {
     title: "SUMMER SALE 3",
