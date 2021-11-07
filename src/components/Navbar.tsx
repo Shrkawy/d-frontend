@@ -15,7 +15,7 @@ const Navbar = () => {
         </Left>
 
         <Center>
-          <h1>LAMA.</h1>
+          <h1>SHARK.</h1>
         </Center>
 
         <Right>
