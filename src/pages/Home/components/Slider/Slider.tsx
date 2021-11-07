@@ -1,9 +1,9 @@
 import { useState } from "react";
-import styled from "styled-components";
-import { ArrowLeft, ArrowRight } from "../../icons";
+import { ArrowLeft, ArrowRight } from "../../../../icons";
 import Slides, { Slide } from "./Slides";
+import { Container, Arrow, Wrapper } from "./Slider.styles";
 
-interface ArrowProps {
+export interface ArrowProps {
   direction: string;
 }
 
@@ -62,40 +62,5 @@ const Slider = () => {
     </Container>
   );
 };
-
-const Container = styled.section`
-  position: relative;
-  width: 100%;
-  height: calc(100vh - 3.75rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-`;
-
-const Arrow = styled.button<ArrowProps>`
-  all: unset;
-  z-index: 2;
-  cursor: pointer;
-  opacity: 0.5;
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 50%;
-  background-color: #fff7f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: ${(props) => props.direction === "left" && "0.625rem"};
-  right: ${(props) => props.direction === "right" && "0.625rem"};
-`;
-
-const Wrapper = styled.div`
-  height: 100%;
-  display: flex;
-`;
 
 export default Slider;

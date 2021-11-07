@@ -1,33 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import { Search, Cart, Heart } from "../../icons";
-
-export interface PRODUCT {
-  id: number;
-  img: string;
-}
-
-interface ProductProps {
-  item: PRODUCT;
-}
-
-const Product = ({ item }: ProductProps) => {
-  return (
-    <Container>
-      <img src={item.img} alt="product" />
-      <div className="info">
-        <div className="icon">
-          <Search size={24} />
-        </div>
-        <div className="icon">
-          <Cart size={24} />
-        </div>
-        <div className="icon">
-          <Heart size={24} />
-        </div>
-      </div>
-    </Container>
-  );
-};
+import { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const scale = keyframes`
     from {
@@ -39,7 +11,7 @@ const scale = keyframes`
     }
 `;
 
-const Container = styled.div`
+export const ProductContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,5 +61,3 @@ const Container = styled.div`
     }
   }
 `;
-
-export default Product;

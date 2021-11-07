@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import CategoriesList, { Category } from "./CategoriesList";
+import { Category } from "./CategoriesList";
+import { CategoriesContainer } from "./Categories.styles";
+import { CategoriesList } from ".";
 
 const items: Category[] = [
   {
@@ -18,17 +19,12 @@ const items: Category[] = [
 
 const Categories = () => {
   return (
-    <Container>
-      <CategoriesList items={items} />
-    </Container>
+    <CategoriesContainer>
+      {items.map((item) => (
+        <CategoriesList item={item} />
+      ))}
+    </CategoriesContainer>
   );
 };
-
-const Container = styled.section`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.25rem;
-  padding: 3.5rem 2.5rem;
-`;
 
 export default Categories;

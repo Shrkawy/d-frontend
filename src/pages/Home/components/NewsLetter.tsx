@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Mail } from "../icons";
+import { Mail } from "../../../icons";
 
 const NewsLetter = () => {
   return (

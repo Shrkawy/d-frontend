@@ -1,33 +1,13 @@
 import styled from "styled-components";
 
-export interface Category {
-  img: string;
-  title: string;
-}
+export const CategoriesContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+  padding: 3.5rem 2.5rem;
+`;
 
-interface CategoryProps {
-  items: Category[];
-}
-
-const CategoriesList = ({ items }: CategoryProps) => {
-  return (
-    <>
-      {items.map(({ img, title }, i) => (
-        <Container key={i}>
-          <div className="image-container">
-            <img src={img} alt={title} />
-          </div>
-          <div className="info">
-            <h1>{title}</h1>
-            <button>SHOP NOW</button>
-          </div>
-        </Container>
-      ))}
-    </>
-  );
-};
-
-const Container = styled.div`
+export const CategoryContainer = styled.div`
   position: relative;
   overflow: hidden;
 
@@ -77,5 +57,3 @@ const Container = styled.div`
     }
   }
 `;
-
-export default CategoriesList;
